@@ -1,0 +1,136 @@
+/* Table Container */
+.table-container {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Header */
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f9;
+  }
+  
+  .table-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Pagination Styling */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .pagination-info,
+  .go-to-page {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Go to Page Input */
+  .page-input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Row Info */
+  .row-info {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .search-input {
+      width: 100%;
+    }
+  
+    .pagination-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pagination-btn {
+      width: 100%;
+    }
+  
+    .go-to-page {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .page-input {
+      width: 50px;
+    }
+  
+    .row-info {
+      font-size: 0.9rem;
+    }
+  }
+  
